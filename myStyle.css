@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+
+    
+}
+
+html{
+    font-size: 10px;
+
+
+}
+
+body{
+    -ms-overflow-style: none;
+    }
+    
+   ::-webkit-scrollbar {
+     display: none;
+
+    
+
+   }
+
+#container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.top600{
+    bottom: 150px;
+}
+
+.bottom1{
+    bottom: 0px;
+}
+
+.bottom20{
+    bottom: 50px;
+}
+
+.bottom30{
+    bottom: 30px;
+}
+
+.bottom50{
+    bottom: 90px;
+}
+
+
+.left1{
+    left: 30px;
+    top: 20px;
+}
+
+.left2{
+    left: 500px;
+}
+
+
+
+/*메인이미지 비율*/
+
+
+.mainImg{
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/main1.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+
+
+.imgBox{
+    width: 100%;
+}
+
+
+
+.titleImg{
+    width: 26vmax;
+    padding-top: 180px;
+
+}
+
+.startImg{
+    width: 10vmax;
+    height: auto;
+
+}
+
+
+
+
+
+/*서브*/
+
+
+
+
+.serveImg{
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/serve1-1.gif");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+.serveImg2{
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/serve1-2.gif");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+.serveImg3{
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/serve1-3.gif");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+.serveImg4{
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/serve1-4.gif");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+
+
+.textBox{
+    width: 1000px
+}
+
+.text{
+    font-size: 3.5rem;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.homeBtnImg{
+    width: 50px;
+}
+
+.BtnCss{
+    border: 0;
+    outline:0;
+}
+
+.tipingBox{
+    width: 1200px;
+}
+
+.MoneyBox{
+    width: 100vw
+
+}
+#clickImg{
+    filter: opacity(0);
+    width: 100vmax;
+    height: 100vh;
+}
+
+/*이미지 얹히기*/
+.rel
+{position: relative;}
+.abs
+{position: absolute;}
+
+
+
+/*hover*/
+.scale {
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;   
+
+  }
+  .scale:hover {
+    transform: scale(1.2);}
+
+
+.jb-a {
+    margin: 0px auto;
+    position: relative
+  }
+
+.jb-c {
+  position: absolute;
+  display: none;
+}
+.jb-a:hover .jb-c {
+  display: block;
+}
+
+
+
+
+
+
+
+/*Ani*/
+
+.titleAni {animation: motion 0.2s linear 0s infinite alternate; margin-top: 0;}
+        
+@keyframes motion {
+	0% {margin-top: 0px;}
+	100% {margin-top: 10px;}
+}
+
+
+.textBoxAni { 
+    animation: fadein 1.5s;
+    -webkit-animation: fadein 1.5s; 
+
+}
+
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+        
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.typingAni {
+  width: 14ch;
+  animation: typing 1.5s steps(12), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 3.5rem;
+}
+
+
+.typingAniB {
+    width: 17ch;
+    animation: typing 2s steps(18), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 3.5rem;
+  }
+
+  .typingAniC {
+    width: 14ch;
+    animation: typing 1.5s steps(12), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 3.5rem;
+  }
+
+  .typingAniD {
+    width: 15ch;
+    animation: typing 1.5s steps(13), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 3.5rem;
+  }
+
+  .typingAniE {
+    width: 10ch;
+    animation: typing 1s steps(10), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 3.5rem;
+  }
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+
+@media(max-width:780px) 
+{
+
+
+    .typingAni {
+        width: 14ch;
+        animation: typing 1.5s steps(12), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: 'Do Hyeon', sans-serif;
+        font-size: 2rem;
+      }
+
+      .typingAniB {
+        width: 17ch;
+        animation: typing 2s steps(18), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: 'Do Hyeon', sans-serif;
+        font-size: 2rem;
+      }
+    
+      .typingAniC {
+        width: 14ch;
+        animation: typing 1.5s steps(12), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: 'Do Hyeon', sans-serif;
+        font-size: 2rem;
+      }
+    
+      .typingAniD {
+        width: 15ch;
+        animation: typing 1.5s steps(13), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: 'Do Hyeon', sans-serif;
+        font-size: 2rem;
+      }
+    
+      .typingAniE {
+        width: 10ch;
+        animation: typing 1s steps(10), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: 'Do Hyeon', sans-serif;
+        font-size: 2rem;
+      }
+
+      .bottom20{
+        bottom: 33px;
+        }
+
+      .bottom50{
+        bottom: 67px;
+        }
+
+        .textBox{
+        width: 600px;}
+
+ 
+
+}
+
+
+
+/*모바일버전*/
+
+@media(max-width:480px) 
+{
+
+    .serveImg{
+        width: 100%;
+        height: 100vh;
+        background-image: url("img/serve1-1m.gif");
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center;
+    }
+
+    .serveImg2{
+        width: 100%;
+        height: 100vh;
+        background-image: url("img/serve1-2m.gif");
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center;
+    }
+    
+    .serveImg3{
+        width: 100%;
+        height: 100vh;
+        background-image: url("img/serve1-3m.gif");
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center;
+    }
+    
+    .serveImg4{
+        width: 100%;
+        height: 100vh;
+        background-image: url("img/serve1-4m.gif");
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center;
+    }
+
+
+    .bottom20{
+        bottom: 30px;
+        }
+    .bottom1{
+        width: 100%;
+        }
+    
+
+    .textBox{
+    width: 370px;
+    height: 80px;
+    } 
+    
+    .bottom50{
+        bottom: 60px;
+    }
+
+    .MoneyBox{
+        width: 100vw
+
+    }
+
+
+
+    
+    #clickImg{
+        filter: opacity(0);
+        height: 100vh;
+        width: 370px;
+    }
+
+    #classA{
+        width: 414px;
+    }
+}
